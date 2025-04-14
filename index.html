@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaterm — Terminal and PAM driven by LLM</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif; font-weight: 700;">
+                <span class="fs-2 fs-md-3 fs-lg-4 fw-bold" style="color: #2c3e50!important;">Chaterm.ai_</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#document">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/chaterm/chaterm/releases/latest">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/chaterm/chaterm" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row min-vh-100 justify-content-center text-center">
+                <div class="col-12 order-lg-1 mb-5" data-aos="fade-down">
+                    <h1 class="display-4 fw-bold">Get years of SRE experience <br>in minutes</h1>
+                    <p class="lead mb-4">Manage multiple cloud resources and protect information security in a easy way.</p>
+                    <br><br>
+                </div>
+                <div class="col-lg-8 order-lg-2" data-aos="fade-up">
+                    <img src="images/hero.png" alt="hero-image" class="img-fluid rounded shadow-lg hero-image mx-auto d-block" style="max-width: 100%; height: auto; transform: scale(1.5); transform-origin: center;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section bg-light py-6" id="feature">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <br><br><br>
+                    <h2 class="display-5 fw-bold mb-4">Key Features</h2>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Feature Cards -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-robot fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">AI Agents</h3>
+                        <p class="text-muted mb-4">Use natural language to instead of remember the complex command line.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-terminal fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Smart Completion</h3>
+                        <p class="text-muted mb-4">Command suggestion base your personal knowledge across multiple os platform.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-highlighter fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Global Syntax Highlight</h3>
+                        <p class="text-muted mb-4">Personalization syntax highlighting on no matter whatever shell you use.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-file-code fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Visual Vim Editor</h3>
+                        <p class="text-muted mb-4">Get visual text editor experience in terminal Vim like Sublime Text.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-code fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Global Alias</h3>
+                        <p class="text-muted mb-4">Short aliases instead of complex code snippets across multiple terminal.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-lock fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Zero Trust</h3>
+                        <p class="text-muted mb-4">No need to worry about update passwords and SSH certificates monthly again.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-users fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">IAM and Workspace</h3>
+                        <p class="text-muted mb-4">Make collaboration easier in same team and isolation between different teams.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-fingerprint fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Privacy Watermark</h3>
+                        <p class="text-muted mb-4">Privacy watermark, screen recording, Clipboard and data transmission control.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100 p-4 shadow rounded-4 text-center hover:shadow-lg transition-all">
+                        <div class="icon-wrapper bg-primary-soft p-3 rounded-3 d-inline-block mb-4">
+                            <i class="fas fa-chart-line fs-3 text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Behavior Audits</h3>
+                        <p class="text-muted mb-4">Advanced pattern recognition and anomaly detection in user operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security-section bg-light py-5" id="security">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">Enterprise-Grade Security</h1>
+                    <p class="lead mb-4">We are committed to protecting your data with comprehensive security solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features -->
+    <section class="security-features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="security-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Data Encryption</h3>
+                        <p>End-to-end encryption for all data transfers and storage</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="security-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Access Control</h3>
+                        <p>Granular permission management and role-based access</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="security-card">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Security Audit</h3>
+                        <p>Comprehensive logging and monitoring system</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Plans -->
+    <section class="future-plans bg-light py-5" id="pricing">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h2 class="display-3 fw-bold">Future Plans - Under Development</h2>
+                    <p class="lead mb-4">We're still developing our service and pricing models. Share your thoughts on what would work best for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <h4>Chaterm.ai_</h4>
+                    <p class="lead mb-4">Copyright © 2025. All rights reserved.</p>
+                </div>
+                <div class="col-md-7">
+                    <div class="row justify-content-end">
+                        <div class="col-sm-4">
+                            <h5>Resources</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Documentation</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5>Community</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5>Legal</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.gnu.org/licenses/gpl-3.0.html">License</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
